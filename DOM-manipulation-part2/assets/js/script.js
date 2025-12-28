@@ -73,9 +73,17 @@ sectionB.replaceChild(h2Baru, p4);
 pBaru.style.backgroundColor = "lightgreen";
 liBaru.style.backgroundColor = "lightgreen";
 h2Baru.style.backgroundColor = "lightgreen";
-
+//
+//
+//
+//
+//
 const container = document.getElementsByClassName("container")[0];
 container.style.backgroundColor = "#ddd";
+//
+//
+//
+//
 const sectionBaru = document.createElement("section");
 const h3Baru = document.createElement("h3");
 const isiH3Baru = document.createTextNode("judul section baru");
@@ -84,21 +92,32 @@ h3Baru.appendChild(isiH3Baru);
 sectionBaru.appendChild(h3Baru);
 container.appendChild(sectionBaru);
 
-const cekClassH1 = document.querySelector("h1");
-let cekKeConsole = cekClassH1.classList.contains("judul");
-console.log(`${cekKeConsole} adalah hasil sebelum di ubah`);
-cekClassH1.classList.add("judul");
-let cekKeConsoleBaru = cekClassH1.classList.contains("judul");
-console.log(cekKeConsoleBaru);
+sectionBaru.setAttribute("id", "c");
+const sectionC = document.querySelector("section#c");
+container.append(sectionC);
 
-const linkBaru = document.createElement("a");
-const isiLinkBaru = document.createTextNode("ini link baru");
-linkBaru.appendChild(isiLinkBaru);
+// membuat wadah
+const paragrafC = document.createElement("p");
+//membuat teks untuk wadah
+const teksParagrafC = document.createTextNode("Paragraf C baru");
+//menyimpan teks pada wadah
+paragrafC.append(teksParagrafC);
+//menyimpan wadah pada tempatnya
+sectionBaru.append(paragrafC);
 
-sectionBaru.appendChild(linkBaru);
-linkBaru.setAttribute("href", "https://twitter.com/notmilize");
+//membuat li baru
+const liSectionC = document.createElement("li");
+const isiLiSectionC = document.createTextNode("item Li baru section C");
+liSectionC.append(isiLiSectionC);
 
-linkBaru.style.textDecoration = "none";
-linkBaru.style.cursor = "pointer";
-linkBaru.style.color = "red";
-linkBaru.textContent = "ini adalah link, klik aku";
+sectionC.append(liSectionC);
+
+// menggunakan insert before dan menempatkan li baru di antara paragraf C dan li C
+
+const liMidC = document.createElement("li");
+const isiLiMidC = document.createTextNode("paragraf C tengah");
+liMidC.append(isiLiMidC);
+const li2C = sectionC.querySelector("li");
+
+// sectionC.append(liMidC);
+// sectionC.before(liMidC, li2C);
