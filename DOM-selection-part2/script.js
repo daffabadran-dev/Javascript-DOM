@@ -8,31 +8,31 @@
 //
 //DOM Selection
 //document.getElementByID() -> mengembalikan element
-const judul = document.getElementById("judul");
-judul.style.color = "red";
-judul.style.backgroundColor = "#000";
-judul.innerHTML = "judul telah di ubah dengan JS";
+// const judul = document.getElementById("judul");
+// judul.style.color = "red";
+// judul.style.backgroundColor = "#000";
+// judul.innerHTML = "judul telah di ubah dengan JS";
 
-//getElementsByTagName()
-const p = document.getElementsByTagName("p");
-p[0].style.backgroundColor = "pink";
-// p[1].style.backgroundColor = "pink";
-// p[2].style.backgroundColor = "pink";
-// p[3].style.backgroundColor = "pink";
+// //getElementsByTagName()
+// const p = document.getElementsByTagName("p");
+// p[0].style.backgroundColor = "pink";
+// // p[1].style.backgroundColor = "pink";
+// // p[2].style.backgroundColor = "pink";
+// // p[3].style.backgroundColor = "pink";
 
-for (let i = 0; i < p.length; i++) {
-  p[i].style.backgroundColor = "red";
-}
+// for (let i = 0; i < p.length; i++) {
+//   p[i].style.backgroundColor = "red";
+// }
 
-const h1 = document.getElementsByTagName("h1")[0];
-// h1[0].style.backgroundColor = "gray";
+// const h1 = document.getElementsByTagName("h1")[0];
+// // h1[0].style.backgroundColor = "gray";
 
-h1.style.backgroundColor = "yellow";
+// h1.style.backgroundColor = "yellow";
 
-//getElementByClassName()
-const p1 = document.getElementsByClassName("p1");
-p1[0].innerHTML = "ini di ubah lewat JS";
-p1[0].style.color = "white";
+// //getElementByClassName()
+// const p1 = document.getElementsByClassName("p1");
+// p1[0].innerHTML = "ini di ubah lewat JS";
+// p1[0].style.color = "white";
 
 //document.querySelector() -> mengembalikan element
 const p4 = document.querySelector("#b p");
