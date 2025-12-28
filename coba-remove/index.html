@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>removeChild</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>removeChild Interaktif</h1>
+        <p class="subtitle">
+          memahami dan mempelajari cara menghapus elemen dari DOM javascript
+        </p>
+      </header>
+
+      <main>
+        <div class="demo-panel">
+          <h2 class="panel-title">Demo removeChild()</h2>
+
+          <div class="controls">
+            <button id="addItem"><i class="fas fa-plus"></i>Tambah item</button>
+
+            <button id="removeLast">
+              <i class="fas fa-minus"></i> Hapus terakhir
+            </button>
+
+            <button id="clearAll">
+              <i class="fas fa-trash"></i> Hapus semua
+            </button>
+          </div>
+
+          <div class="demo-area" id="itemContainer">
+            <div class="empty-message">
+              Tidak ada item, klik tambah untuk memulai
+            </div>
+
+            <div class="counter">
+              Jumlah Item: <span id="itemCount">0</span>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- --- -->
+    </div>
+
+    <!-- javascript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
