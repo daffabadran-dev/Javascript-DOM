@@ -5,12 +5,17 @@
 const pBaru = document.createElement("p");
 const teksPBaru = document.createTextNode("paragraf baruuuu");
 
-//simpan tulisan kedalam paragraf
+const wadahPBaru = document.createElement("p");
+// const KataBuatWadahBaru = document.createTextNode("paragraf baru astagaaaa");
+// //simpan tulisan kedalam paragraf
 pBaru.appendChild(teksPBaru);
+// wadahPBaru.appendChild(KataBuatWadahBaru);
 
 //simpan P baru di akhir sectian a pada index.html
 const sectionA = document.getElementById("a");
 sectionA.appendChild(pBaru);
+// const tempatA = document.getElementById("a");
+// tempatA.appendChild(wadahPBaru);
 
 // appendChild untuk menyimpan di akhir
 //kode di atas:
