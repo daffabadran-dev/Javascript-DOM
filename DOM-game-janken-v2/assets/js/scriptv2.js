@@ -23,4 +23,37 @@ pGajah.addEventListener("click", function () {
 
   const imgComp = document.querySelector(".img-computer");
   imgComp.setAttribute("src", `img/${pilihanKomputer}.png`);
+
+  const info = document.querySelector(".info");
+  info.innerHTML = hasil;
+});
+//
+//
+const pSemut = document.querySelector(".semut");
+pSemut.addEventListener("click", function () {
+  // alert("oke");
+  const pilihanKomputer = getPilihanComputer();
+  const pilihanPlayer = pSemut.className;
+  const hasil = gethasil(pilihanKomputer, pilihanPlayer);
+
+  const imgComp = document.querySelector(".img-computer");
+  imgComp.setAttribute("src", `img/${pilihanKomputer}.png`);
+
+  const info = document.querySelector(".info");
+  info.innerHTML = hasil;
+});
+//
+//
+const pOrang = document.querySelector(".orang");
+pOrang.addEventListener("click", function () {
+  // alert("oke");
+  const pilihanKomputer = getPilihanComputer();
+  const pilihanPlayer = pOrang.className;
+  const hasil = gethasil(pilihanKomputer, pilihanPlayer);
+
+  const imgComp = document.querySelector(".img-computer");
+  imgComp.setAttribute("src", `img/${pilihanKomputer}.png`);
+
+  const info = document.querySelector(".info");
+  info.innerHTML = hasil;
 });
