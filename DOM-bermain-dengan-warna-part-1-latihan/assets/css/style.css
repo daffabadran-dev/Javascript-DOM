@@ -1,3 +1,12 @@
 body {
   text-align: center;
 }
+.biru-muda {
+  background-color: lightblue;
+}
+.abu-abu {
+  background-color: rgb(56, 55, 55);
+}
+button {
+  margin: 20px;
+}
