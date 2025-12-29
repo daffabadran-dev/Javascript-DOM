@@ -13,3 +13,14 @@ function gethasil(comp, player) {
 }
 // console.log(gethasil("semut", "gajah"));
 //
+
+const pGajah = document.querySelector(".gajah");
+pGajah.addEventListener("click", function () {
+  // alert("oke");
+  const pilihanKomputer = getPilihanComputer();
+  const pilihanPlayer = pGajah.className;
+  const hasil = gethasil(pilihanKomputer, pilihanPlayer);
+
+  const imgComp = document.querySelector(".img-computer");
+  imgComp.setAttribute("src", `img/${pilihanKomputer}.png`);
+});
