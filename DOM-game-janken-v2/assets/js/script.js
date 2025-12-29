@@ -1,4 +1,5 @@
 //permainan gunting batu kertas vs komputer
+let mainLagi = true;
 function mainGame() {
   //membuat pilihan atau opsi yang akan digunakan
   const pilihan = ["gunting", "batu", "kertas"];
@@ -18,7 +19,7 @@ function mainGame() {
   } else if (
     (player === "gunting" && komputer === "kertas") ||
     (player === "batu" && komputer === "gunting") ||
-    (player === "gunting" && komputer === "kertas")
+    (player === "kertas" && komputer === "batu")
   ) {
     alert(
       `komputer memilih ${komputer}\nanda memilih ${player}\nhasilnya menang`
@@ -30,5 +31,9 @@ function mainGame() {
   }
   return player;
 }
+// console.log(mainGame());
 
-console.log(mainGame());
+while (mainLagi) {
+  mainGame();
+  mainLagi = confirm("lagi gak?");
+}
