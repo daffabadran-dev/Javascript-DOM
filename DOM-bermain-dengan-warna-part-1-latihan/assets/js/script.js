@@ -3,6 +3,9 @@
 // const body = document.querySelector("body");
 const tombol = document.createElement("button");
 const teksTombol = document.createTextNode("klik untuk mengubah warna");
+tombol.textContent = "klik saya, ";
+tombol.setAttribute("type", "button");
+tombol.id = "tombolWarna";
 //
 tombol.append(teksTombol);
 document.body.append(tombol);
