@@ -11,19 +11,22 @@ function mainGame() {
     return false;
   }
 
-  alert(`komputer memilih ${komputer}`);
-  alert(`anda memilih: ${player}`);
-
   if (player === komputer) {
-    alert("seri");
+    alert(
+      `komputer memilih ${komputer}\nanda memilih ${player}\nhasilnya seri`
+    );
   } else if (
     (player === "gunting" && komputer === "kertas") ||
     (player === "batu" && komputer === "gunting") ||
     (player === "gunting" && komputer === "kertas")
   ) {
-    alert("menang");
+    alert(
+      `komputer memilih ${komputer}\nanda memilih ${player}\nhasilnya menang`
+    );
   } else {
-    alert("kalah");
+    alert(
+      `komputer memilih ${komputer}\nanda memilih ${player}\nhasilnya kalah`
+    );
   }
   return player;
 }
