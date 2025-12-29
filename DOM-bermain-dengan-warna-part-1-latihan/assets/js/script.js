@@ -86,3 +86,16 @@ sBiru.addEventListener("input", updateBackgroundColor);
 sMerah.addEventListener("input", updateBackgroundColor);
 sHijau.addEventListener("input", updateBackgroundColor);
 // updateBackgroundColor();
+
+//
+document.body.addEventListener("mousemove", function (event) {
+  // posisi mouse
+  // console.log(event.clientX);
+  //ukuran browser
+  // console.log(window.innerWidth);
+
+  const posisiX = Math.round((event.clientX / window.innerWidth) * 255);
+  const posisiY = Math.round((event.clientY / window.innerHeight) * 255);
+  // console.log(posisiX);
+  document.body.style.backgroundColor = `rgb(${posisiX}, ${posisiY}, 100)`;
+});
